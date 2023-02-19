@@ -3,8 +3,13 @@ FROM debian:buster
 # Install git, supervisor, VNC, & X11 packages
 RUN set -ex; \
     apt-get update; \
-    apt-get install -y \
-      mate-desktop-environment \
+    apt-get install -y --no-install-recommends \
+      ubuntu-desktop \
+      unity-lens-applications \
+      gnome-panel \
+      metacity \
+      nautilus \
+      gedit \
       bash \
       fluxbox \
       git \
