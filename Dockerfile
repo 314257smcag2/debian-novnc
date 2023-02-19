@@ -5,8 +5,6 @@ RUN set -ex; \
     apt-get update; \
     apt-get install -y \
       mate-desktop-environment \
-#      lightdm \
-#      lightdm-gtk-greeter \
       bash \
       fluxbox \
       git \
@@ -16,6 +14,8 @@ RUN set -ex; \
       x11vnc \
       xterm \
       xvfb
+#      lightdm \
+#      lightdm-gtk-greeter \
 
 # Setup demo environment variables
 ENV HOME=/root \
