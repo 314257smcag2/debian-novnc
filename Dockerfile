@@ -3,7 +3,8 @@ FROM debian:buster
 # Install git, supervisor, VNC, & X11 packages
 RUN set -ex; \
     apt-get update; \
-    apt-get install -y --no-install-recommends \
+      apt-get upgrade -y; \
+      apt-get install -y  \
       mate-desktop-environment \
       unity-lens-applications \
       gnome-panel \
