@@ -4,7 +4,7 @@ FROM debian:buster
 RUN set -ex; \
     apt-get update; \
     apt-get install -y --no-install-recommends \
-      ubuntu-desktop \
+      mate-desktop-environment \
       unity-lens-applications \
       gnome-panel \
       metacity \
