@@ -4,6 +4,9 @@ FROM debian:buster
 RUN set -ex; \
     apt-get update; \
     apt-get install -y \
+      mate-desktop-environment \
+#      lightdm \
+#      lightdm-gtk-greeter \
       bash \
       fluxbox \
       git \
