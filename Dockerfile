@@ -4,7 +4,7 @@ FROM debian:buster
 
 RUN apt-get update
 RUN apt-get upgrade -y
-RUN apt-get install -y  mate-desktop-environment unity-lens-applications gnome-panel metacity nautilus gedit bash fluxbox git net-tools novnc supervisor x11vnc xterm xvfb
+RUN apt-get install -y  mate-desktop-environment gedit bash fluxbox git net-tools novnc supervisor x11vnc xterm xvfb
 
 # Setup demo environment variables
 ENV HOME=/root \
