@@ -1,5 +1,5 @@
 services:
-  prrot:
+  debian-novnc:
     build: .
     shm_size: 128gb
     ports:
