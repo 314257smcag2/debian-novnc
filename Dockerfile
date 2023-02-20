@@ -22,6 +22,7 @@ ENV HOME=/root \
     DISPLAY_WIDTH=1024 \
     DISPLAY_HEIGHT=768
 
+RUN 
 COPY . /app
-CMD ["/app/entrypoint.sh"]
+CMD ["cd app && chmod a+x * && entrypoint.sh"]
 EXPOSE 8088
